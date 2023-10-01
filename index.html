@@ -68,10 +68,43 @@
       }
 
       /* Setting the container tables to 100% width */
-      @media only screen and (max-width: 600px) {
+      @media screen and (max-width: 600px) {
         .wrapper {
           width: 100% !important;
           padding: 0 !important;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .resp-heading {
+          font-size: 40px !important;
+          line-height: 45px !important;
+        }
+
+        .arrow {
+          display: none !important;
+        }
+
+        .resp-img {
+          width: 100% !important;
+        }
+
+        .resp-img-container {
+          max-width: 100% !important;
+        }
+
+        .resp-text {
+          max-width: 100% !important;
+        }
+      }
+
+      @media screen and (min-width: 481px) {
+        .resp-img-container {
+          max-width: 50% !important;
+        }
+
+        .resp-text {
+          width: 50% !important;
         }
       }
     </style>
@@ -176,15 +209,7 @@
                 style="width: 100%; border: 0; border-spacing: 0"
               >
                 <tr>
-                  <td
-                    style="
-                      padding: 40px 25px 0px;
-                      font-size: 24px;
-                      line-height: 28px;
-                      font-weight: bold;
-                      font-family: sans-serif;
-                    "
-                  >
+                  <td style="padding: 40px 25px 0px">
                     <a
                       href="https://podcasters.spotify.com/resources/learn/create/podcast-segment-ideas"
                       target="_blank"
@@ -206,7 +231,8 @@
                 </tr>
                 <tr>
                   <td style="padding: 35px 25px 0px 25px">
-                    <h2
+                    <h1
+                      class="resp-heading"
                       style="
                         font-family: Helvetica, 'Helvetica Neue', Helvetica,
                           Arial, sans-serif;
@@ -224,7 +250,7 @@
                         >9 podcast segment ideas to captivate your
                         listeners</strong
                       >
-                    </h2>
+                    </h1>
                   </td>
                 </tr>
                 <tr>
@@ -259,7 +285,7 @@
                 <div
                   style="
                     width: 100%;
-                    max-width: 300px;
+                    max-width: 250px;
                     display: inline-block;
                     vertical-align: middle;
                   "
@@ -300,6 +326,7 @@
                             <td style="width:50%;" valign="middle">
                 <![endif]-->
                 <div
+                  class="arrow"
                   style="
                     width: 100%;
                     max-width: 300px;
@@ -333,8 +360,8 @@
               <div
                 class="spacer"
                 style="
-                  line-height: 30px;
-                  height: 30px;
+                  line-height: 10px;
+                  height: 10px;
                   mso-line-height-rule: exactly;
                 "
               >
@@ -349,11 +376,13 @@
                       <td style="width:50%;">
                 <![endif]-->
                 <div
+                  class="resp-img-container"
                   style="
                     width: 100%;
                     max-width: 300px;
                     display: inline-block;
                     vertical-align: top;
+                    padding-top: 20px;
                   "
                 >
                   <div style="padding: 0px 18px 0px 25px">
@@ -370,11 +399,12 @@
                         target="_blank"
                       >
                         <img
+                          class="resp-img"
                           src="https://i.ibb.co/fD4kJr6/comedy-podcast-min.png"
-                          alt="How to make a great comedy podcast"
+                          alt="Two women speaking into a microphone seemingly telling jokes"
                           border="0"
-                          width="257"
-                          style="width: 257px; max-width: 100%; height: auto"
+                          width="300"
+                          style="width: 300px; max-width: 100%; height: auto"
                         />
                       </a>
                     </p>
@@ -446,11 +476,13 @@
                       <td style="width:50%;">
                 <![endif]-->
                 <div
+                  class="resp-img-container"
                   style="
                     width: 100%;
                     max-width: 300px;
                     display: inline-block;
                     vertical-align: top;
+                    padding-top: 20px;
                   "
                 >
                   <div style="padding: 0px 18px 0px 25px">
@@ -467,8 +499,9 @@
                         target="_blank"
                       >
                         <img
+                          class="resp-img"
                           src="https://i.ibb.co/k4wRNkJ/trending-topics-min.png"
-                          alt="How to find (and use!) trending podcast topics"
+                          alt=""
                           border="0"
                           width="257"
                           style="width: 257px; max-width: 100%; height: auto"
@@ -602,6 +635,7 @@
                     <td style="width:50%;" valign="middle">
                   <![endif]-->
                   <div
+                    class="resp-img-container"
                     style="
                       width: 100%;
                       max-width: 300px;
@@ -609,16 +643,9 @@
                       vertical-align: middle;
                     "
                   >
-                    <p
-                      style="
-                        font-family: sans-serif;
-                        font-size: 24px;
-                        line-height: 28px;
-                        font-weight: bold;
-                        padding: 0 25px;
-                      "
-                    >
+                    <p style="padding: 0 25px">
                       <img
+                        class="resp-img"
                         src="https://i.ibb.co/Rykyyjh/podcast-news-min.webp"
                         alt="podcast-news-min"
                         border="0"
@@ -638,11 +665,13 @@
                   <td>
                   <![endif]-->
                   <div
+                    class="resp-text"
                     style="
                       width: 100%;
                       max-width: 300px;
                       display: inline-block;
-                      vertical-align: middle;
+                      vertical-align: top;
+                      padding-top: 30px;
                     "
                   >
                     <div style="padding: 0 25px">
@@ -776,6 +805,12 @@
                   <td style="padding: 40px 25px 0px">
                     <a
                       href="https://braze-images.com/appboy/communication/assets/image_assets/images/64677f5f4b75b1005b15dd8b/original.png?1684504415"
+                      style="
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                      "
                       ><img
                         src="https://i.ibb.co/MV4Ct8v/masterclass-min.webp"
                         alt="Spotify for podcasters: Masterclass"
@@ -815,7 +850,6 @@
                 <tr>
                   <td style="padding: 20px 25px">
                     <p
-                      class="responsive-p two-col-p"
                       style="
                         font-family: Helvetica, 'Helvetica Neue', Helvetica,
                           Arial, sans-serif;
@@ -1019,6 +1053,12 @@
                     <a
                       style="text-decoration: none"
                       href="https://www.instagram.com/spotifyforpodcasters/?utm_source=email&utm_medium=braze&utm_campaign=may_recroom_2023&utm_term=hosted_nonpub_active_US&%24web_only=true"
+                      style="
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                      "
                       ><img
                         src="https://i.ibb.co/SBxjbQJ/instagram-min.webp"
                         alt="Instagram"
@@ -1030,6 +1070,12 @@
                     <a
                       style="text-decoration: none"
                       href="https://twitter.com/forpodcasters?utm_source=email&utm_medium=braze&utm_campaign=may_recroom_2023&utm_term=hosted_nonpub_active_US&%24web_only=true"
+                      style="
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                      "
                       ><img
                         src="https://i.ibb.co/jRrybCT/twitter-min.webp"
                         alt="Twitter"
@@ -1041,6 +1087,12 @@
                     <a
                       style="text-decoration: none"
                       href="https://www.facebook.com/spotifyforpodcasters?utm_source=email&utm_medium=braze&utm_campaign=may_recroom_2023&utm_term=hosted_nonpub_active_US&%24web_only=true"
+                      style="
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                      "
                       ><img
                         src="https://i.ibb.co/dDZDBS7/facebook-min.webp"
                         alt="Facebook"
@@ -1052,6 +1104,12 @@
                     <a
                       style="text-decoration: none"
                       href="https://www.youtube.com/@SpotifyforPodcasters_?utm_source=email&utm_medium=braze&utm_campaign=may_recroom_2023&utm_term=hosted_nonpub_active_US&%24web_only=true"
+                      style="
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                      "
                       ><img
                         src="https://i.ibb.co/jDWWk71/youtube-min.webp"
                         alt="YouTube"
@@ -1106,6 +1164,7 @@
                       font-family: Helvetica, 'Helvetica Neue', Helvetica, Arial,
                         sans-serif;
                       margin: 0px;
+                      padding: 20px 25px 15px;
                     "
                     align="center"
                   >
@@ -1123,6 +1182,7 @@
                       font-family: Helvetica, 'Helvetica Neue', Helvetica, Arial,
                         sans-serif;
                       margin: 0px;
+                      padding: 0 25px;
                     "
                     align="center"
                   >
